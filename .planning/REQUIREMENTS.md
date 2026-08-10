@@ -77,35 +77,35 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| BRAND-01 | Unmapped | Pending |
-| BRAND-02 | Unmapped | Pending |
-| DATA-01 | Unmapped | Pending |
-| DATA-02 | Unmapped | Pending |
-| DATA-03 | Unmapped | Pending |
-| ORDER-01 | Unmapped | Pending |
-| HOME-01 | Unmapped | Pending |
-| HOME-02 | Unmapped | Pending |
-| HOME-03 | Unmapped | Pending |
-| HOME-04 | Unmapped | Pending |
-| HOME-05 | Unmapped | Pending |
-| MENU-01 | Unmapped | Pending |
-| MENU-02 | Unmapped | Pending |
-| MENU-03 | Unmapped | Pending |
-| MENU-04 | Unmapped | Pending |
-| ABOUT-01 | Unmapped | Pending |
-| CONTACT-01 | Unmapped | Pending |
-| CONTACT-02 | Unmapped | Pending |
-| DELIV-01 | Unmapped | Pending |
-| QUAL-01 | Unmapped | Pending |
-| QUAL-02 | Unmapped | Pending |
-| SEO-01 | Unmapped | Pending |
-| TEST-01 | Unmapped | Pending |
+| BRAND-01 | Phase 1 | Pending |
+| BRAND-02 | Phase 1 | Pending |
+| DATA-01 | Phase 1 | Pending |
+| DATA-02 | Phase 1 | Pending |
+| DATA-03 | Phase 1 | Pending |
+| ORDER-01 | Phase 1 | Pending |
+| HOME-01 | Phase 2 | Pending |
+| HOME-02 | Phase 2 | Pending |
+| HOME-03 | Phase 2 | Pending |
+| HOME-04 | Phase 2 | Pending |
+| HOME-05 | Phase 2 | Pending |
+| MENU-01 | Phase 3 | Pending |
+| MENU-02 | Phase 3 | Pending |
+| MENU-03 | Phase 3 | Pending |
+| MENU-04 | Phase 3 | Pending |
+| ABOUT-01 | Phase 4 | Pending |
+| CONTACT-01 | Phase 4 | Pending |
+| CONTACT-02 | Phase 4 | Pending |
+| DELIV-01 | Phase 4 | Pending |
+| QUAL-01 | Phase 5 | Pending |
+| QUAL-02 | Phase 5 | Pending |
+| SEO-01 | Phase 5 | Pending |
+| TEST-01 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 23 total
-- Mapped to phases: 0
-- Unmapped: 23
+- Mapped to phases: 23
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-08-11*
-*Last updated: 2026-08-11 after initial definition*
+*Last updated: 2026-08-11 after initial roadmap creation*
