@@ -7,6 +7,7 @@ This vertical MVP roadmap builds a truthful, conversion-ready bakery website in 
 ## Phases
 
 **Phase Numbering:**
+
 - Integer phases (1, 2, 3): Planned milestone work
 - Decimal phases (2.1, 2.2): Urgent insertions (marked with INSERTED)
 
@@ -19,6 +20,7 @@ This vertical MVP roadmap builds a truthful, conversion-ready bakery website in 
 ## Phase Details
 
 ### Phase 1: Brand, Content & Order Foundation
+
 **Goal**: Visitors encounter a cohesive boutique bakery identity and can confidently begin an inquiry through one truthful, verified Messenger destination.
 **Mode:** mvp
 **Epic**: Trusted brand and conversion foundation
@@ -28,14 +30,27 @@ This vertical MVP roadmap builds a truthful, conversion-ready bakery website in 
 **Requirements**: BRAND-01, BRAND-02, DATA-01, DATA-02, DATA-03, ORDER-01
 **Task-ready scope**: Define validated local content contracts and selectors; build reusable responsive shared layout/UI primitives and approved visual tokens; centralize the verified Messenger intent; keep unknown content omitted or visibly labeled. User approval is required before implementation code begins.
 **Success Criteria** (what must be TRUE):
+
   1. Visitor sees the approved warm cream, soft beige, chocolate, caramel, and dark-brown boutique visual identity across shared public elements.
   2. Visitor finds consistent navigation, footer, typography, buttons, cards, and section layouts wherever shared elements appear.
   3. Every displayed product fact is drawn from one approved local catalog, while missing business or product facts are omitted or visibly labeled as placeholders.
   4. Visitor can use primary order calls to action to open the centrally configured, verified Messenger destination.
-**Plans**: TBD
+
+**Plans**: 3 plans
+Plans:
+**Wave 1**
+
+- [ ] 01-01-PLAN.md — Prove Home-to-Facebook order handoff and record the walking skeleton.
+
+**Wave 2** *(blocked on Wave 1 completion)*
+
+- [ ] 01-02-PLAN.md — Define canonical catalog contracts and truthful display primitives.
+- [ ] 01-03-PLAN.md — Deliver the responsive shared public shell and accessible mobile menu.
+
 **UI hint**: yes
 
 ### Phase 2: Home Discovery Experience
+
 **Goal**: First-time visitors can understand Antigua's offerings and value, discover approved highlights, and start an order from a polished home page.
 **Mode:** mvp
 **Epic**: First-visit discovery and conversion
@@ -45,15 +60,18 @@ This vertical MVP roadmap builds a truthful, conversion-ready bakery website in 
 **Requirements**: HOME-01, HOME-02, HOME-03, HOME-04, HOME-05
 **Task-ready scope**: Compose a server-rendered home route from approved data and shared primitives; include responsive hero, product/category discovery, concise substantiated copy, clearly labeled unapproved review/FAQ areas, and the centralized order action. User approval is required before implementation code begins.
 **Success Criteria** (what must be TRUE):
+
   1. Visitor can understand the Antigua's brand and primary Messenger order action from the responsive home hero.
   2. Visitor can discover approved featured products, categories, and best sellers drawn from canonical menu data.
   3. Visitor can read concise, supportable brand, quality, and value content without fabricated claims.
   4. Visitor sees unapproved reviews and FAQ content clearly marked as placeholders rather than presented as real customer information.
   5. Visitor can start an order through Messenger directly from the home page.
+
 **Plans**: TBD
 **UI hint**: yes
 
 ### Phase 3: Menu Browsing & Product Inquiry
+
 **Goal**: Visitors can browse Antigua's complete approved menu, narrow it to a category, and begin a verified product-specific Messenger inquiry.
 **Mode:** mvp
 **Epic**: Catalog discovery and product-context conversion
@@ -63,14 +81,17 @@ This vertical MVP roadmap builds a truthful, conversion-ready bakery website in 
 **Requirements**: MENU-01, MENU-02, MENU-03, MENU-04
 **Task-ready scope**: Build the menu route and reusable data-driven cards for all required categories; add an accessible client-side category filter leaf with All/reset and empty states; show product-context inquiry only when its destination and copy are verified. User approval is required before implementation code begins.
 **Success Criteria** (what must be TRUE):
+
   1. Visitor can browse approved items in Pasta, Cookies, Desserts, Drinks, and Seasonal / Special Products.
   2. Visitor can filter the visible menu by category, return to All, and understand an empty result state using accessible controls.
   3. Visitor can inspect a consistent product card containing only approved image, name, description, sizes, price, and best-seller information.
   4. Visitor can begin a product-context Messenger inquiry only when the configured link format and product copy have been verified.
+
 **Plans**: TBD
 **UI hint**: yes
 
 ### Phase 4: Brand, Contact & Delivery Information
+
 **Goal**: Visitors can learn who Antigua's is and confidently find truthful contact, ordering, pickup, and delivery guidance.
 **Mode:** mvp
 **Epic**: Trust and service-information journey
@@ -80,14 +101,17 @@ This vertical MVP roadmap builds a truthful, conversion-ready bakery website in 
 **Requirements**: ABOUT-01, CONTACT-01, CONTACT-02, DELIV-01
 **Task-ready scope**: Deliver server-rendered about, contact/order, and delivery pages with owner-approved facts and honest placeholders; add locally validated form interaction that never claims message delivery without an approved transport. User approval is required before implementation code begins.
 **Success Criteria** (what must be TRUE):
+
   1. Visitor can read an owner-approved Antigua's story, mission, values, homemade-quality message, and fresh-ingredients content, with missing copy clearly marked as placeholder content.
   2. Visitor can access approved social/contact details, business hours, delivery information, and a map or clearly labeled placeholder from the contact/order page.
   3. Visitor can complete local contact-form validation and is never told that a message was sent when no approved recipient service exists.
   4. Visitor can read approved delivery and pickup information or is clearly prompted to ask through Messenger when those details are unavailable.
+
 **Plans**: TBD
 **UI hint**: yes
 
 ### Phase 5: Accessible, Discoverable Launch Experience
+
 **Goal**: Visitors can reliably use and find every completed public route across devices, while maintainers can verify the core browse-to-Messenger journey before launch.
 **Mode:** mvp
 **Epic**: Public quality and launch confidence
@@ -97,10 +121,12 @@ This vertical MVP roadmap builds a truthful, conversion-ready bakery website in 
 **Requirements**: QUAL-01, QUAL-02, SEO-01, TEST-01
 **Task-ready scope**: Audit and refine completed routes for mobile/desktop semantics, focus, contrast, touch targets, and image loading; add truthful route metadata, robots, sitemap, and 404; implement Playwright desktop/mobile smoke coverage for routes, filtering, 404, and Messenger hrefs. User approval is required before implementation code begins.
 **Success Criteria** (what must be TRUE):
+
   1. Visitor can use every public route on mobile and desktop with keyboard navigation, visible focus, semantic landmarks, adequate touch targets, and readable color contrast.
   2. Visitor receives optimized local images with meaningful or decorative-appropriate alt treatment, with only the hero image prioritized for loading.
   3. Search engines receive route-specific metadata, robots guidance, sitemap output, and a custom not-found page without unverified structured business data.
   4. Maintainer can run Playwright smoke tests covering desktop and mobile public routes, menu filtering, the 404 page, and Messenger call-to-action destinations.
+
 **Plans**: TBD
 **UI hint**: yes
 
