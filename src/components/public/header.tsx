@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { MobileMenu } from "@/components/public/mobile-menu";
 import { OrderCta } from "@/components/public/order-cta";
 
 export function Header() {
@@ -12,7 +13,7 @@ export function Header() {
         >
           Antigua&apos;s Bake &amp; Cuisine
         </Link>
-        <div className="flex items-center gap-4">
+        <div className="flex items-start gap-4">
           <nav aria-label="Primary navigation" className="hidden md:block">
             <Link
               aria-current="page"
@@ -23,6 +24,7 @@ export function Header() {
             </Link>
           </nav>
           <OrderCta className="w-full sm:w-auto" />
+          <MobileMenu />
         </div>
       </div>
     </header>
