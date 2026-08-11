@@ -9,8 +9,8 @@ export function OrderCta({ className }: { className?: string }) {
     <div className={cn("flex max-w-sm flex-col gap-2", className)}>
       <a
         className={cn(
-          buttonVariants({ variant: "default", size: "lg" }),
-          "min-h-11 px-4 text-center text-sm font-semibold",
+          buttonVariants({ variant: "default", size: "cta" }),
+          "text-center text-sm",
         )}
         href={facebookPageUrl}
         target="_blank"
