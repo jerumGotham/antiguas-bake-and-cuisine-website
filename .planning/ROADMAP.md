@@ -36,7 +36,7 @@ This vertical MVP roadmap builds a truthful, conversion-ready bakery website in 
   3. Every displayed product fact is drawn from one approved local catalog, while missing business or product facts are omitted or visibly labeled as placeholders.
   4. Visitor can use primary order calls to action to open the centrally configured, verified Messenger destination.
 
-**Plans**: 1/3 plans executed
+**Plans**: 2/3 plans executed
 Plans:
 **Wave 1**
 
@@ -44,7 +44,7 @@ Plans:
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
-- [ ] 01-02-PLAN.md — Define canonical catalog contracts and truthful display primitives.
+- [x] 01-02-PLAN.md — Define canonical catalog contracts and truthful display primitives.
 - [ ] 01-03-PLAN.md — Deliver the responsive shared public shell and accessible mobile menu.
 
 **UI hint**: yes
@@ -137,7 +137,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Brand, Content & Order Foundation | 1/3 | In Progress|  |
+| 1. Brand, Content & Order Foundation | 2/3 | In Progress|  |
 | 2. Home Discovery Experience | 0/TBD | Not started | - |
 | 3. Menu Browsing & Product Inquiry | 0/TBD | Not started | - |
 | 4. Brand, Contact & Delivery Information | 0/TBD | Not started | - |
