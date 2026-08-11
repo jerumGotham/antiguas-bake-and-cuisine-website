@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 import { OrderCta } from "@/components/public/order-cta";
+import { siteNav } from "@/components/public/site-nav";
 
 const panelId = "mobile-navigation-panel";
 
@@ -36,17 +37,13 @@ export function MobileMenu() {
       </button>
       {isOpen ? (
         <div
-          className="absolute right-0 z-10 mt-2 flex w-[min(20rem,calc(100vw-2rem))] flex-col gap-4 rounded-lg border border-border/50 bg-card p-4 shadow-lg"
+          className="absolute right-0 z-10 mt-2 flex w-[min(20rem,calc(100vw-2rem))] flex-col gap-4 border border-border/50 bg-card p-4 shadow-lg"
           id={panelId}
         >
-          <Link
-            className="w-fit border-b-2 border-primary pb-1 text-sm font-semibold text-foreground"
-            href="/"
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </Link>
-          <OrderCta />
+          <nav aria-label="Mobile navigation" className="flex flex-col gap-3">
+            {siteNav.map((item) => <Link className="w-fit border-b-2 border-transparent pb-1 text-sm font-semibold text-foreground transition hover:border-primary" href={item.href} key={item.href} onClick={() => setIsOpen(false)}>{item.label}</Link>)}
+          </nav>
+          <OrderCta className="w-full max-w-none" />
         </div>
       ) : null}
     </div>
