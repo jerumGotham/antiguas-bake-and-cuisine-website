@@ -1,10 +1,11 @@
 ---
 phase: 1
 slug: brand-content-order-foundation
-status: draft
+status: approved
 shadcn_initialized: true
 preset: b2aAPYLnpA (base-nova, stone/amber, Lucide, Inter/Public Sans)
 created: 2026-08-11
+reviewed_at: 2026-08-11
 ---
 
 # Phase 1 — UI Design Contract
@@ -41,7 +42,7 @@ Declared values (must be multiples of 4):
 | 2xl | 48px | Mobile section vertical padding and major component separation |
 | 3xl | 64px | Desktop section vertical padding and page-level separation |
 
-Exceptions: interactive controls, including the mobile-menu trigger and header order CTA, have a minimum 44px by 44px target; horizontal page gutters are 20px on small screens and 32px from 768px upward.
+Exceptions: interactive controls, including the mobile-menu trigger and header order CTA, have a minimum 44px by 44px target; horizontal page gutters are 16px on small screens and 32px from 768px upward.
 
 ---
 
@@ -94,6 +95,10 @@ The CTA must be a normal external anchor to the single configured URL `https://w
 
 ## UI Considerations
 
+### Primary-Screen Hierarchy
+
+On the primary public screen, guide the eye in this exact order: **(1)** the Antigua’s Bake & Cuisine wordmark, **(2)** the filled **“Message us on Facebook.”** CTA with its adjacent login support text, and **(3)** supporting Home content and factual/image placeholders. Keep the wordmark as the header’s strongest identity element; make the CTA the only filled accent control; subordinate all supporting text through the documented body/label styles and secondary color surfaces. At every viewport width, do not let navigation, decorative rules, or placeholders compete with the wordmark or CTA.
+
 Applicable state considerations resolved: 7 covered, 8 dismissed, 2 backstop, 0 unresolved.
 
 | Category | Element(s) | Status | Resolution / Reason |
@@ -112,7 +117,7 @@ Applicable state considerations resolved: 7 covered, 8 dismissed, 2 backstop, 0 
 | loading | Primary order CTA | ✅ dismissed | The anchor opens the configured Facebook Page in a separate browser tab; the app cannot reliably observe Facebook authentication or page-load status. |
 | error | Primary order CTA | ✅ dismissed | Do not render a false success/error message for an external handoff; the fixed support text truthfully sets the login expectation. |
 | long-text | Footer brand note and factual placeholder content | 🧪 backstop | Long owner-approved or placeholder text wraps, preserves all words, and does not create viewport overflow at 320px. |
-| overflow | Footer and static content | ✅ covered | Footer stacks vertically on small screens and uses 20px minimum gutters; no future sitemap/contact list is shown. |
+| overflow | Footer and static content | ✅ covered | Footer stacks vertically on small screens and uses 16px minimum gutters; no future sitemap/contact list is shown. |
 | partial | Business/product factual displays | ✅ covered | Render `Details coming soon.` for each expected missing fact and the branded image placeholder for missing imagery; omit optional fields lacking an expected slot. |
 
 ---
@@ -128,11 +133,11 @@ Applicable state considerations resolved: 7 covered, 8 dismissed, 2 backstop, 0 
 
 ## Checker Sign-Off
 
-- [ ] Dimension 1 Copywriting: PASS
-- [ ] Dimension 2 Visuals: PASS
-- [ ] Dimension 3 Color: PASS
-- [ ] Dimension 4 Typography: PASS
-- [ ] Dimension 5 Spacing: PASS
-- [ ] Dimension 6 Registry Safety: PASS
+- [x] Dimension 1 Copywriting: PASS
+- [x] Dimension 2 Visuals: PASS
+- [x] Dimension 3 Color: PASS
+- [x] Dimension 4 Typography: PASS (recommendation: give the icon-only menu trigger a state-aware accessible name)
+- [x] Dimension 5 Spacing: PASS
+- [x] Dimension 6 Registry Safety: PASS
 
-**Approval:** pending
+**Approval:** approved 2026-08-11
