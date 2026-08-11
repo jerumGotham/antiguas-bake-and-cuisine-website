@@ -1,9 +1,9 @@
 ---
 phase: 1
 slug: brand-content-order-foundation
-status: draft
-nyquist_compliant: false
-wave_0_complete: false
+status: ready
+nyquist_compliant: true
+wave_0_complete: true
 created: 2026-08-11
 ---
 
@@ -38,9 +38,12 @@ created: 2026-08-11
 
 | Task ID | Plan | Wave | Requirement | Threat Ref | Secure Behavior | Test Type | Automated Command | File Exists | Status |
 |---------|------|------|-------------|------------|-----------------|-----------|-------------------|-------------|--------|
-| 01-01-01 | 01 | 1 | DATA-01, DATA-02, DATA-03 | T-01-01 | One typed local catalog is the only product-fact source; unknown facts remain absent or use the locked placeholders. | compile-time + manual source review | `npm run lint && npm run build` | ❌ W0 | ⬜ pending |
-| 01-01-02 | 01 | 1 | BRAND-01, BRAND-02 | — | Shared tokens and primitives preserve visible focus and responsive public-shell semantics. | build + manual visual review | `npm run lint && npm run build` | ❌ W0 | ⬜ pending |
-| 01-01-03 | 01 | 1 | ORDER-01 | T-01-02 | All primary CTAs use the one verified Facebook Page URL, exact label/warning, and safe new-tab behavior. | build + manual source/browser review | `npm run lint && npm run build` | ❌ W0 | ⬜ pending |
+| 01-01-01 | 01-01 | 1 | BRAND-01, BRAND-02, DATA-01, DATA-03, ORDER-01 | T-01-01, T-01-02, T-01-03 | The Home tracer obtains facts and CTA copy/destination from typed local content, renders the locked placeholder policy, and opens the configured Page safely. | lint/build + manual browser review | `npm run lint && npm run build` | N/A — no test framework | ⬜ pending |
+| 01-01-02 | 01-01 | 1 | BRAND-01, DATA-01, ORDER-01 | T-01-SC | The walking-skeleton record preserves the local-content, server-rendered, Page-handoff architecture and prohibited boundaries. | file existence + lint/build | `test -f .planning/phases/01-brand-content-order-foundation/01-SKELETON.md && npm run lint && npm run build` | N/A — no test framework | ⬜ pending |
+| 01-02-01 | 01-02 | 2 | DATA-01, DATA-02, DATA-03 | T-01-04, T-01-05 | Typed records and exact-match selectors derive only from the canonical catalog and retain absent unapproved metadata. | lint/build + manual source review | `npm run lint && npm run build` | N/A — no test framework | ⬜ pending |
+| 01-02-02 | 01-02 | 2 | BRAND-02, DATA-02, DATA-03 | T-01-06 | Presentation primitives bind their image props to canonical metadata and use the locked absent-image/fact treatment without remote or fabricated media. | lint/build + manual 320px review | `npm run lint && npm run build` | N/A — no test framework | ⬜ pending |
+| 01-03-01 | 01-03 | 2 | BRAND-01, BRAND-02, ORDER-01 | T-01-07, T-01-08 | The shared server shell exposes only Home and the configured reusable order CTA, with responsive visual and focus behavior. | lint/build + desktop/mobile manual review | `npm run lint && npm run build` | N/A — no test framework | ⬜ pending |
+| 01-03-02 | 01-03 | 2 | BRAND-02 | T-01-09 | The sole client interaction leaf exposes semantic open state and supports trigger, Escape-close, and Home-activation-close transitions. | lint/build + manual keyboard interaction review | `npm run lint && npm run build` | N/A — no test framework | ⬜ pending |
 
 *Status: ⬜ pending · ✅ green · ❌ red · ⚠️ flaky*
 
@@ -65,11 +68,11 @@ Existing infrastructure covers static type/lint/build validation. No new test fr
 
 ## Validation Sign-Off
 
-- [ ] All tasks have `<automated>` verify or Wave 0 dependencies
+- [x] All tasks have `<automated>` verify or Wave 0 dependencies
 - [ ] Sampling continuity: no 3 consecutive tasks without automated verify
-- [ ] Wave 0 covers all MISSING references
+- [x] Wave 0 covers all MISSING references
 - [ ] No watch-mode flags
 - [ ] Feedback latency < 60s
-- [ ] `nyquist_compliant: true` set in frontmatter
+- [x] `nyquist_compliant: true` set in frontmatter
 
 **Approval:** pending

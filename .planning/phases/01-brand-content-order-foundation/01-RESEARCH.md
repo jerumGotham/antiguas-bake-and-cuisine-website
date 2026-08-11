@@ -223,16 +223,14 @@ No literal implementation snippet is prescribed: token names, data type member n
 | A3 | The product type should use optional metadata fields and a best-seller flag rather than fabricated placeholder records. | Architecture Patterns | Data shape may need adjustment when owner-approved catalog facts arrive. |
 | A4 | Manual inspection is required beyond linting for focus, touch targets, and contrast. | Common Pitfalls | Accessibility defects could remain if the planner relies only on lint. |
 
-## Open Questions
+## Open Questions (RESOLVED)
 
 1. **Which business/product facts and images are owner-approved at implementation time?**
-   - What we know: unknown public facts must be omitted or visibly marked; stock food images are prohibited. [VERIFIED: .planning/phases/01-brand-content-order-foundation/01-CONTEXT.md:16-20]
-   - What's unclear: the initial catalog records, prices, descriptions, image files, and any business facts to publish.
-   - Recommendation: make Phase 1 render zero unapproved records/facts and leave the content module ready for approved additions.
+    - What we know: unknown public facts must be omitted or visibly marked; stock food images are prohibited. [VERIFIED: .planning/phases/01-brand-content-order-foundation/01-CONTEXT.md:16-20]
+    - **RESOLVED (Phase 1 disposition):** render zero unapproved catalog records, prices, descriptions, images, or business facts. The typed modules and display boundaries remain ready for owner-approved additions while every expected missing fact follows D-01 through D-03.
 2. **Which exact display serif and body sans fonts are desired?**
-   - What we know: the pairing is locked and `next/font/google` can self-host selected Google fonts. [VERIFIED: .planning/phases/01-brand-content-order-foundation/01-CONTEXT.md:21-25] [CITED: node_modules/next/dist/docs/01-app/01-getting-started/13-fonts.md:94-119]
-   - What's unclear: the selected families and any brand licensing constraint.
-   - Recommendation: select a variable serif and variable sans from the supported font API during planning, or use the existing sans until design approval.
+    - What we know: the pairing is locked and `next/font/google` can self-host selected Google fonts. [VERIFIED: .planning/phases/01-brand-content-order-foundation/01-CONTEXT.md:21-25] [CITED: node_modules/next/dist/docs/01-app/01-getting-started/13-fonts.md:94-119]
+    - **RESOLVED (Phase 1 disposition):** use Playfair Display for display/headings and Inter for body, navigation, labels, buttons, and placeholders through `next/font/google`, as approved by `01-UI-SPEC.md`.
 
 ## Environment Availability
 
