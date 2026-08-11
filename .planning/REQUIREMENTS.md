@@ -7,12 +7,12 @@
 
 ### Brand and Content Foundation
 
-- [ ] **BRAND-01**: Visitor sees a responsive boutique bakery visual system using the approved warm cream, soft beige, chocolate brown, caramel, and dark brown palette.
-- [ ] **BRAND-02**: Visitor experiences consistent shared navigation, footer, typography, spacing, cards, buttons, and section layouts across public pages.
-- [ ] **DATA-01**: Site content is defined in strongly typed local TypeScript modules for business facts, categories, products, and optional product metadata.
+- [x] **BRAND-01**: Visitor sees a responsive boutique bakery visual system using the approved warm cream, soft beige, chocolate brown, caramel, and dark brown palette.
+- [x] **BRAND-02**: Visitor experiences consistent shared navigation, footer, typography, spacing, cards, buttons, and section layouts across public pages.
+- [x] **DATA-01**: Site content is defined in strongly typed local TypeScript modules for business facts, categories, products, and optional product metadata.
 - [ ] **DATA-02**: Every displayed product is sourced from canonical local data and can include only owner-approved name, description, image, sizes, price, category, and best-seller status.
-- [ ] **DATA-03**: Missing business or product information is omitted or visibly marked as a placeholder instead of being invented.
-- [ ] **ORDER-01**: Visitor can start an order through a centrally configured, verified Messenger destination from primary calls to action.
+- [x] **DATA-03**: Missing business or product information is omitted or visibly marked as a placeholder instead of being invented.
+- [x] **ORDER-01**: Visitor can start an order through a centrally configured, verified Messenger destination from primary calls to action.
 
 ### Home Experience
 
@@ -77,12 +77,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| BRAND-01 | Phase 1 | Pending |
-| BRAND-02 | Phase 1 | Pending |
-| DATA-01 | Phase 1 | Pending |
+| BRAND-01 | Phase 1 | Complete |
+| BRAND-02 | Phase 1 | Complete |
+| DATA-01 | Phase 1 | Complete |
 | DATA-02 | Phase 1 | Pending |
-| DATA-03 | Phase 1 | Pending |
-| ORDER-01 | Phase 1 | Pending |
+| DATA-03 | Phase 1 | Complete |
+| ORDER-01 | Phase 1 | Complete |
 | HOME-01 | Phase 2 | Pending |
 | HOME-02 | Phase 2 | Pending |
 | HOME-03 | Phase 2 | Pending |
@@ -102,6 +102,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | TEST-01 | Phase 5 | Pending |
 
 **Coverage:**
+
 - v1 requirements: 23 total
 - Mapped to phases: 23
 - Unmapped: 0
