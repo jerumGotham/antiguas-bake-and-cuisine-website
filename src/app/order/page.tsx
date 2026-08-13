@@ -1,5 +1,21 @@
-import { PageIntro } from "@/components/public/page-intro"
+import { PageIntro } from "@/components/public/page-intro";
+import { OrderForm } from "@/components/public/order-form";
 
 export default function OrderPage() {
-  return <PageIntro eyebrow="HOW TO ORDER" title="Choose, then message us."><ol className="list-decimal space-y-3 pl-5"><li>Browse the menu and choose your favorites.</li><li>Message us on Facebook with the items and sizes you would like.</li><li>Ask us for the current order and delivery details.</li></ol></PageIntro>
+  return (
+    <>
+      <PageIntro eyebrow="HOW TO ORDER" title="Send us your request.">
+        <ol className="list-decimal space-y-3 pl-5">
+          <li>Browse the menu and choose your favorites.</li>
+          <li>List the items, sizes, and quantities in the form below.</li>
+          <li>We will follow up using the details you provide.</li>
+        </ol>
+      </PageIntro>
+      <section className="bg-card px-4 py-12 md:px-8 md:py-16">
+        <div className="mx-auto max-w-3xl">
+          <OrderForm />
+        </div>
+      </section>
+    </>
+  );
 }

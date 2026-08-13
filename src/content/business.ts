@@ -5,6 +5,12 @@ export const businessContent = {
     ctaLabel: "Message us on Facebook.",
     loginWarning: "Facebook login may be required to message us.",
   },
+  contact: {
+    address:
+      "Block 4 Lot 16 Myrtle Street, Metrogreen Village, Brgy. San Bartolome, Quezon City, Philippines",
+    email: "antiguasbakeandcuisine@gmail.com",
+    phone: "0915 495 3635",
+  },
   placeholders: {
     detail: "Details coming soon.",
     imageLabel: "Image coming soon",
@@ -13,6 +19,6 @@ export const businessContent = {
     businessOverview: null,
     featuredImage: null,
   },
-} as const
+} as const;
 
-export type BusinessContent = typeof businessContent
+export type BusinessContent = typeof businessContent;

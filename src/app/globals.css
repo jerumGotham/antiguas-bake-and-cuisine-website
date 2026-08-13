@@ -94,6 +94,7 @@
       transparent 0
     );
     background-size: 24px 24px;
+    overflow-x: hidden;
   }
   html {
     @apply font-sans;
@@ -105,6 +106,91 @@
   }
 }
 
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes soft-float {
+  0%,
+  100% {
+    transform: rotate(2deg) translateY(0);
+  }
+  50% {
+    transform: rotate(2deg) translateY(-10px);
+  }
+}
+
+main > section {
+  animation: rise-in 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+main > section:nth-child(2) {
+  animation-delay: 90ms;
+}
+
+main > section:nth-child(3) {
+  animation-delay: 150ms;
+}
+
+.home-hero {
+  background:
+    linear-gradient(115deg, color-mix(in srgb, var(--primary) 18%, transparent), transparent 48%),
+    var(--background);
+}
+
+.home-hero-art {
+  animation: soft-float 5s ease-in-out infinite;
+  box-shadow: 16px 16px 0 color-mix(in srgb, var(--primary) 48%, transparent);
+  transform: rotate(2deg);
+}
+
+.home-hero-art img {
+  transition: transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-hero-art:hover img {
+  transform: scale(1.06);
+}
+
+.home-kicker::before {
+  content: "";
+  display: inline-block;
+  width: 2.5rem;
+  height: 1px;
+  margin-right: 0.75rem;
+  vertical-align: middle;
+  background: var(--primary);
+}
+
+.feedback-frame {
+  box-shadow: 8px 8px 0 color-mix(in srgb, var(--primary) 28%, transparent);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.feedback-frame:nth-child(2) {
+  transform: translateY(1.25rem);
+}
+
+.feedback-frame:hover {
+  box-shadow: 12px 12px 0 color-mix(in srgb, var(--primary) 48%, transparent);
+  transform: translate(-3px, -3px);
+}
+
+.feedback-frame:hover img {
+  transform: scale(1.035);
+}
+
+.feedback-frame img {
+  transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -113,5 +199,15 @@
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-hero-art {
+    box-shadow: 10px 10px 0 color-mix(in srgb, var(--primary) 48%, transparent);
+  }
+
+  .feedback-frame:nth-child(2) {
+    transform: none;
   }
 }
