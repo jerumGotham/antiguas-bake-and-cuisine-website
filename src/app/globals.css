@@ -117,16 +117,6 @@
   }
 }
 
-@keyframes soft-float {
-  0%,
-  100% {
-    transform: rotate(2deg) translateY(0);
-  }
-  50% {
-    transform: rotate(2deg) translateY(-10px);
-  }
-}
-
 main > section {
   animation: rise-in 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -146,7 +136,6 @@ main > section:nth-child(3) {
 }
 
 .home-hero-art {
-  animation: soft-float 5s ease-in-out infinite;
   box-shadow: 16px 16px 0 color-mix(in srgb, var(--primary) 48%, transparent);
   transform: rotate(2deg);
 }

@@ -9,6 +9,7 @@ type OrderRequest = {
   name?: unknown;
   email?: unknown;
   phone?: unknown;
+  address?: unknown;
   inquiryType?: unknown;
   order?: unknown;
   notes?: unknown;
@@ -67,12 +68,16 @@ export async function POST(request: Request) {
   const name = value(payload.name, 120);
   const email = value(payload.email, 254);
   const phone = value(payload.phone, 40);
+  const address = value(payload.address, 500);
   const inquiryType = value(payload.inquiryType, 40);
   const order = value(payload.order, 2_000);
   const notes = value(payload.notes, 2_000);
-  if (!name || !email.includes("@") || !phone || !order) {
+  if (!name || !email.includes("@") || !phone || !address || !order) {
     return NextResponse.json(
-      { error: "Please complete your name, email, phone number, and order." },
+      {
+        error:
+          "Please complete your name, email, phone number, delivery address, and order.",
+      },
       { status: 400 },
     );
   }
@@ -81,6 +86,7 @@ export async function POST(request: Request) {
     `Name: ${name}`,
     `Email: ${email}`,
     `Phone: ${phone}`,
+    `Delivery address: ${address}`,
     `Inquiry: ${inquiryType || "Order"}`,
     "",
     "Order:",
@@ -112,7 +118,7 @@ export async function POST(request: Request) {
     sender: { email: senderEmail, name: "Antigua's Bake & Cuisine" },
     to: [{ email, name }],
     subject: "We received your request",
-    textContent: `Hi ${name},\n\nWe received your ${inquiryType || "order"} request. We will follow up using the contact details you provided.\n\nYour request:\n${order}${notes ? `\n\nNotes:\n${notes}` : ""}\n\nAntigua's Bake & Cuisine`,
+    textContent: `Hi ${name},\n\nWe received your ${inquiryType || "order"} request. We will follow up using the contact details you provided.\n\nDelivery address:\n${address}\n\nYour request:\n${order}${notes ? `\n\nNotes:\n${notes}` : ""}\n\nAntigua's Bake & Cuisine`,
     tags: ["website-order-confirmation"],
   });
 

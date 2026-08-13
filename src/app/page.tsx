@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { HeroSlideshow } from "@/components/public/hero-slideshow";
 import { OrderCta } from "@/components/public/order-cta";
 import { ProductCard } from "@/components/public/product-card";
 import { ImagePlaceholder } from "@/components/ui/image-placeholder";
@@ -51,21 +52,12 @@ export default function Home() {
               Browse the current menu.
             </h1>
             <p className="max-w-[52ch] text-base leading-7 text-foreground/85">
-              Explore pasta, cookies, desserts, and drinks from Antigua&apos;s Bake
-              &amp; Cuisine.
+              Explore pasta, cookies, desserts, and drinks from Antigua&apos;s
+              Bake &amp; Cuisine.
             </p>
             <OrderCta />
           </div>
-          <div className="home-hero-art relative aspect-[5/4] overflow-hidden border border-border/30">
-            <Image
-              alt="Antigua's pasta favorites"
-              className="object-cover"
-              fill
-              priority
-              sizes="(min-width: 1024px) 50vw, 100vw"
-              src="/images/carbo_lasagna.jpg"
-            />
-          </div>
+          <HeroSlideshow />
         </div>
       </Section>
       <Section className="bg-card">
@@ -125,10 +117,10 @@ export default function Home() {
         <div className="space-y-8">
           <div>
             <p className="text-sm font-semibold tracking-[0.14em] text-foreground">
-                EXPLORE THE MENU
+              EXPLORE THE MENU
             </p>
             <h2 className="mt-3 font-heading text-[28px] font-semibold text-foreground">
-                Browse by category
+              Browse by category
             </h2>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -154,7 +146,7 @@ export default function Home() {
         </div>
       </Section>
       <Section className="bg-card">
-        <div className="grid gap-8 lg:grid-cols-3">
+        <div className="grid gap-8 lg:grid-cols-2">
           {(["Pasta", "Desserts", "Cookies"] as const).map((category) => {
             const product = getProductsByCategory(category)[0];
             return (
@@ -209,20 +201,6 @@ export default function Home() {
               href="/order"
             >
               View ordering guide
-            </Link>
-          </div>
-          <div className="border-t-2 border-primary pt-4">
-            <h2 className="font-heading text-xl font-semibold text-foreground">
-              Delivery
-            </h2>
-            <p className="mt-3 text-base leading-6 text-foreground/85">
-              Ask us on Facebook for the latest delivery details.
-            </p>
-            <Link
-              className="mt-4 inline-block text-sm font-semibold text-foreground underline underline-offset-4"
-              href="/delivery"
-            >
-              Ask about delivery
             </Link>
           </div>
         </div>

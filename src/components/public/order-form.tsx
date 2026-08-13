@@ -6,6 +6,7 @@ const initialState = {
   name: "",
   email: "",
   phone: "",
+  address: "",
   inquiryType: "Order",
   order: "",
   notes: "",
@@ -95,6 +96,17 @@ export function OrderForm() {
           required
           type="tel"
           value={form.phone}
+        />
+      </label>
+      <label className="block space-y-2 text-sm font-semibold">
+        Delivery address
+        <textarea
+          className="min-h-24 w-full border border-border/45 bg-background px-3 py-3 font-normal outline-none focus:border-primary"
+          name="address"
+          onChange={(event) => update("address", event.target.value)}
+          placeholder="House or unit number, street, barangay, city"
+          required
+          value={form.address}
         />
       </label>
       <label className="block space-y-2 text-sm font-semibold">

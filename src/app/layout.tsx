@@ -20,6 +20,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Antigua's Bake & Cuisine",
   description: "Antigua's Bake & Cuisine",
+  icons: { icon: "/images/favicon.jpg" },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
