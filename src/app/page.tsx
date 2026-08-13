@@ -39,7 +39,8 @@ export default function Home() {
   return (
     <>
       <div className="bg-foreground px-4 py-2 text-center text-sm font-semibold text-background">
-        Browse the menu, then message us on Facebook to order.
+        Browse the menu, then place your order online or message us on Facebook
+        Messenger.
       </div>
       <Section className="home-hero bg-background">
         <div className="grid items-center gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12">
@@ -193,14 +194,14 @@ export default function Home() {
               How to order
             </h2>
             <p className="mt-3 text-base leading-6 text-foreground/85">
-              Choose your favorites and send us a message on the verified
-              Facebook Page.
+              Place an order using our form, or message us on Facebook
+              Messenger.
             </p>
             <Link
               className="mt-4 inline-block text-sm font-semibold text-foreground underline underline-offset-4"
               href="/order"
             >
-              View ordering guide
+              Place an order
             </Link>
           </div>
         </div>
