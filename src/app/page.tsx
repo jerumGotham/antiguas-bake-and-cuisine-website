@@ -18,7 +18,7 @@ const categoryImages = {
   Pasta: "/images/lasagna2_pasta.jpg",
   Cookies: "/images/cookies.jpg",
   Desserts: "/images/moist_cake_price.jpg",
-  Drinks: "/images/mango_price.jpg",
+  Drinks: "/images/iced_coffee_sea_salt.jpg",
 } as const;
 const feedbackImages = [
   "/images/feedback1.jpg",

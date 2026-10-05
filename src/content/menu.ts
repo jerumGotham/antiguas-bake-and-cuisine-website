@@ -256,7 +256,7 @@ export const products = [
   {
     id: "mango-tapioca-jelly",
     name: "Mango Tapioca Jelly",
-    category: "Drinks",
+    category: "Desserts",
     isBestSeller: true,
     description:
       "Creamy, fruity, and full of chewy goodness in every spoonful. A refreshing treat you'll love!",
@@ -269,7 +269,7 @@ export const products = [
   {
     id: "coffee-jelly",
     name: "Coffee Jelly",
-    category: "Drinks",
+    category: "Desserts",
     description:
       "Smooth, creamy, and a perfectly coffee-infused delight with chewy coffee jelly in every sip!",
     image: { src: "/images/coffe_jelly_orig.jpeg", alt: "Coffee jelly" },
@@ -301,6 +301,41 @@ export const products = [
     options: [
       { label: "Mini 150ml, pan size 3.4 x 3.4 x 1.3 inches", price: "PHP150" },
       { label: "Solo 300ml, pan size 4.4 x 4.4 x 1.7 inches", price: "PHP230" },
+    ],
+  },
+  {
+    id: "iced-coffee-classics",
+    name: "Iced Coffee Classics",
+    category: "Drinks",
+    description:
+      "Our classic iced lattes, from the sweet Spanish latte to a caramel-drizzled macchiato.",
+    image: {
+      src: "/images/iced_coffee_classics.jpg",
+      alt: "Caramel macchiato and iced latte",
+    },
+    options: [
+      { label: "Spanish Latte", price: "PHP75" },
+      { label: "Vanilla Latte", price: "PHP100" },
+      { label: "Mocha Latte", price: "PHP120" },
+      { label: "Caramel Macchiato", price: "PHP125" },
+    ],
+  },
+  {
+    id: "signature-cream-collection",
+    name: "Signature Cream Collection",
+    category: "Drinks",
+    isBestSeller: true,
+    description:
+      "Iced lattes topped with our sea salt cream. Try the Sea Salt Oreo Latte, Antigua's Favorite!",
+    image: {
+      src: "/images/iced_coffee_sea_salt.jpg",
+      alt: "Sea salt Oreo latte and sea salt Biscoff latte",
+    },
+    options: [
+      { label: "Sea Salt Spanish Latte", price: "PHP90" },
+      { label: "Sea Salt Cream Latte", price: "PHP90" },
+      { label: "Sea Salt Oreo Latte", price: "PHP120" },
+      { label: "Sea Salt Biscoff Latte", price: "PHP130" },
     ],
   },
 ] as const satisfies readonly Product[];
